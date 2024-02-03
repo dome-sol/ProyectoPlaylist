@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/Login.css">
+    
 </head>
 <body>
 
-    <form>
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username">
+    <form method="post">
+        <label for="username" >Usuario:</label>
+        <input type="text" id="usuarioInput" name="username">
       
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password">
+        <label for="password" >Contraseña:</label>
+        <input type="password" id="contrasenaInput" name="password">
       
-        <input type="submit" value="Iniciar sesión">
+        <button type="submit" onclick="iniciarSesion()">Iniciar sesion</button>
       </form>
 
 
@@ -32,6 +33,27 @@
         <span>Iniciar Sesión</span>
 
     </div> -->
-    
+
+    <script>
+        function iniciarSesion() {
+            const usuarioInput = document.getElementById("usuarioInput").value;
+            const contrasenaInput = document.getElementById("contrasenaInput").value;
+
+            // Verificar las credenciales con el método iniciarSesion de la clase Usuario
+            if (usuario1.iniciarSesion(usuarioInput, contrasenaInput)) {
+                // Credenciales válidas, redirigir a otra página
+                window.location.href="Webplayer.html";
+            } else if (usuario2.iniciarSesion(usuarioInput, contrasenaInput)) {
+                // Credenciales válidas para el segundo usuario, redirigir a otra página
+                window.location.href = 'Webplayer.html';
+            } else {
+                // Credenciales inválidas
+                alert("Credenciales incorrectas. Inténtalo de nuevo.");
+            }
+        }
+
+    </script>
+
+    <script src="../Playlist.js"></script>
 </body>
 </html>
