@@ -33,3 +33,11 @@
   }
 }
 
+ // Crear una instancia de la clase canción con valores de ejemplo
+ let cancion1 = new Cancion("Caprice 24 ", "David Garrett", "Classic", 2015, "../Portadas/cancion1.jpeg");
+//Mostrar los valores de los métodos get de la instancia
+console.log(cancion1.nombreCancion); // Despacito
+console.log(cancion1.artistaCancion); // Luis Fonsi
+console.log(cancion1.generoCancion); // Pop
+console.log(cancion1.añoCancion); // 2017
+console.log(cancion1.fotoCancion); //
