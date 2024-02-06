@@ -16,3 +16,8 @@ class Usuario{
 
 
 }
+
+//Crear dos usuarios con sus respectivas contraseñas
+const usuario1 = new Usuario("usuario1", "contrasena1");
+const usuario2 = new Usuario("usuario2", "contrasena2");
+
