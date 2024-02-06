@@ -177,12 +177,48 @@ li {
 
 /* apartado buscar-fin */
 
+      /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.results-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.results-container::-webkit-scrollbar:vertical {
+
+    width:20px;
+
+   
+}
+
+.results-container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.results-container::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.results-container::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.results-container::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
 
 .results-container {
+    height: 100px;
     list-style-type: none;
     padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
 }
+
+
 
 .song-item {
     display: flex;
