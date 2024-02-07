@@ -34,11 +34,13 @@
 }
 
  // Crear una instancia de la clase canción con valores de ejemplo
-const canciones = [ cancion1, cancion2 , cancion3, cancion4];
+
  let cancion1 = new Cancion("Caprice 24 ", "David Garrett", "Classic", 2015, "../Portadas/cancion1.jpeg");
  let cancion2 = new Cancion("Caprice 25 ", "David Garrett", "Classic", 2015, "../Portadas/cancion1.jpeg");
  let cancion3 = new Cancion("Caprice 26 ", "David Tarrett", "Classic", 2015, "../Portadas/cancion1.jpeg");
- let cancion3 = new Cancion("Caprice 27 ", "David Tarrett", "Classic", 2015, "../Portadas/cancion1.jpeg");
+ let cancion4 = new Cancion("Caprice 27 ", "David Tarrett", "Classic", 2015, "../Portadas/cancion1.jpeg");
+ 
+
 
 
 

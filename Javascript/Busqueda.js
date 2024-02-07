@@ -1,19 +1,18 @@
 class Busqueda{
-
-constructor(nombre,canciones){
-  this.nombre=nombre;
-  this.canciones=canciones;
+    canciones = [ cancion1, cancion2 , cancion3, cancion4];
+    constructor(Cancion){
+    this.canciones=canciones;
 
   
 }
-  
- search() {
+
+  search(){
      const searchTerm = document.getElementById("search-input").value.toLowerCase();
      const resultsContainer = document.getElementById("search-results");
      resultsContainer.innerHTML= ""; // Limpiar resultados anteriores o lista inicial de todas las canciones
 
      const resultados = canciones.filter(cancion =>
-         cancion.titulo.toLowerCase().includes(searchTerm) || cancion.artista.toLowerCase().includes(searchTerm)
+         cancion.nombre.toLowerCase().includes(searchTerm) || cancion.artista.toLowerCase().includes(searchTerm)
      );
 
      if (resultados.length === 0) {
@@ -22,7 +21,7 @@ constructor(nombre,canciones){
          resultados.forEach(cancion => {
 
              const listItem = document.createElement("li");
-             listItem.textContent = `${cancion.titulo} - ${cancion.artista}`;
+             listItem.textContent = `${cancion.nombre} - ${cancion.artista}`;
              resultsContainer.appendChild(listItem);
 
              //Añadir boton de agregar a favoritos a la lista de resultados
@@ -42,18 +41,20 @@ constructor(nombre,canciones){
              resultsContainer.appendChild(listItem);
          });
      }
+       
 
-agregarFavoritos(){
-   
+
+        //agregarFavoritos(){}
+
+        //  agregarAlista(){ }
+     
+    }
+
 }
 
-  agregarAlista(){
-   
-}
-  
 
-
-
-   
-  
-}
+ console.log("LAS CANCIONES DISPONIBLES SON:")
+        canciones.forEach(Cancion => {
+        console.log(Cancion.artista+"---"+Cancion.nombreCancion)
+        }
+        );
