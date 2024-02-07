@@ -4,7 +4,7 @@ form {
     max-width: 300px;
     margin: auto;
   }
-  
+   
   label {
     margin-bottom: 5px;
   }
@@ -13,7 +13,7 @@ form {
     margin-bottom: 10px;
   }
   
-  input[type="submit"] {
+  button[type="submit"] {
     background-color: #4caf50;
     color: white;
     padding: 10px 15px;
@@ -22,6 +22,6 @@ form {
     cursor: pointer;
   }
   
-  input[type="submit"]:hover {
+  button[type="submit"]:hover {
     background-color: #45a049;
   }
