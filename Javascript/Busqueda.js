@@ -1,10 +1,14 @@
-class Busqueda{
+
+
+class Busqueda extends Lista{
     canciones = [ cancion1, cancion2 , cancion3, cancion4];
     constructor(Cancion){
     this.canciones=canciones;
 
   
 }
+
+//Método para realizar una busqueda
 
   search(){
      const searchTerm = document.getElementById("search-input").value.toLowerCase();
@@ -44,12 +48,18 @@ class Busqueda{
        
 
 
-        //agregarFavoritos(){}
-
-        //  agregarAlista(){ }
      
     }
 
+    // Método para agregar una canción a la lista de Favoritos
+        agregarAFavoritos(cancion) {
+            this.agregarCancion(cancion);
+        }
+
+    // Método para agregar una canción a la lista de Reproducción
+        agregarAListaDeReproduccion(cancion) {
+            this.agregarCancion(cancion);
+        }
 }
 
 
