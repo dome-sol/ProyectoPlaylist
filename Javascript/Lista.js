@@ -1,12 +1,15 @@
+const Cancion = require('/Cancion'); //IMPORTAR CANCION PARA PODER CREAR EL ARREGLO
+
+const catalogo=Cancion.canciones;
 class Lista {
-    constructor(nombre,_canciones) {
+    constructor(nombre,_catalogo) {
       this.nombre = nombre;
-      this.canciones = [];
+      this.catalogo = this.catalogo;
     }
   
     // Método para añadir una canción a la lista
     agregarCancion(cancion) {
-      this.canciones.push(cancion);
+      this.catalogo.push(cancion);
     }
   
     // Método para borrar una canción de la lista
@@ -15,5 +18,11 @@ class Lista {
         this.canciones.splice(index, 1);
       }
     }
+
   }
+
+catalogo.forEach(Cancion => {
+    console.log(Cancion);
+});
+  
   

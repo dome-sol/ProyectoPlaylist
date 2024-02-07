@@ -40,7 +40,10 @@
  let cancion3 = new Cancion("Caprice 26 ", "David Tarrett", "Classic", 2015, "../Portadas/Cancion1.jpeg");
  let cancion4 = new Cancion("Caprice 27 ", "David Tarrett", "Classic", 2015, "../Portadas/Cancion1.jpeg");
  
+ const canciones=[cancion1, cancion2, cancion3,cancion4];
 
 
 
-
+// Exportar la clase Cancion
+// Exportar la clase Cancion
+export default Cancion;
